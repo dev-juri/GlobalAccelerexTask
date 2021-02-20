@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun afterTextChanged(p0: Editable?) {
-                val cardNumber = p0.toString().toInt()
+                val cardNumber = p0?.length
 
                 if (cardNumber in 6..9) {
                     cardNumberLayout.error = ""
