@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GlobalAccelerexTask</string>
+    <string name="card_number">Card Number</string>
+    <string name="error_msg">You must input the first 6 – 9 digits of your card number.</string>
+    <string name="no_internet">No Internet Connection, Check your connectiona nd try again!</string>
+    <string name="details_demo">Card Scheme: \nCard Type: \nBank: \nCountry: \nCard Number Length: \nType:</string>
+    <string name="details">Card Scheme: %s\nCard Type: %s\nBank: %s\nCountry: %s\nCard Number Length: %s\nType: %s</string>
+    <string name="something_went_wrong">Something went wrong, Try again.</string>
+</resources>
