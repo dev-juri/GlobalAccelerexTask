@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 val cardNumber = cardNumberLayout.editText?.text.toString().toInt()
 
                 if (p0 != null && cardNumber in 6..9) {
-                    cardNumberLayout.error = null
+                    cardNumberLayout.error = ""
                 } else {
                     cardNumberLayout.error = getString(R.string.error_msg)
                 }
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    fun subScribeObserver() {
+    private fun subScribeObserver() {
         viewModel.dataState.observe(this, { dataState ->
             when (dataState) {
                 is NetworkResult.Success<CardDetails> -> {
