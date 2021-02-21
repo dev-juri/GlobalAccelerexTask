@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
                 }
             } else {
                 binding.progressBar.makeGone()
+                binding.cardDetails.makeGone()
                 Snackbar.make(
                     binding.cardNumber,
                     getString(R.string.no_internet),
@@ -84,6 +85,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 is NetworkResult.Error -> {
                     binding.progressBar.makeGone()
+                    binding.cardDetails.makeGone()
                     Snackbar.make(
                         binding.cardNumber,
                         getString(R.string.something_went_wrong),
@@ -91,6 +93,7 @@ class MainActivity : AppCompatActivity() {
                     ).show()
                 }
                 else -> {
+                    binding.cardDetails.makeGone()
                     binding.progressBar.makeVisible()
                 }
             }
